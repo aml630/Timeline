@@ -8,6 +8,8 @@
 
 @section AddToHead{
     <meta property="og:image" content="http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/3v/hv/p03vhv9x.jpg" />
+    <meta property="og:image:width" content="620" />
+    <meta property="og:image:height" content="541" />
     <meta property="og:description" content="Lets Walk Through It Step By Step" />
 }
 
@@ -16,8 +18,7 @@
     @Styles.Render("~/Post1/css")
     @Scripts.Render("~/Post1/js")
 
-    @Html.Partial("ShareBar")
-
+    @Html.Partial("_ShareBar")
 
     <div style="background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/3v/hv/p03vhv9x.jpg) no-repeat fixed 50% 0; " id="banner">
         <div id="bannertext">
@@ -29,29 +30,27 @@
     <div id="content"></div>
     <section id="cd-timeline" class="cd-container">
 
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-location">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Picture">
-            </div> <!-- cd-timeline-img -->
-            <div class="cd-timeline-content Graph1Section">
-                <h2>American Public sees Russian role in DNC campaign hacking</h2>
-                <p>Click below to see results of a Pew Research study on Americans views on the hacking of the DNC and Hillary Clintons campaign for president.</p>
-                <div class="TransparentBarGraphIframeCenter">
-                    <iframe class="TransparentBarGraphIframeProportions" scrolling="no" src="~/Posts/GraphDataCard"></iframe>
-                </div>
-                <a href="http://www.pewresearch.org/fact-tank/2017/01/10/u-s-public-says-russia-hacked-campaign/" class="cd-read-more">Read more</a>
-                <span class="cd-date">January 2017</span>
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+        @*<div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Picture">
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content Graph1Section">
+                    <h2>American Public sees Russian role in DNC campaign hacking</h2>
+                    <p>Click below to see results of a Pew Research study on Americans views on the hacking of the DNC and Hillary Clintons campaign for president.</p>
+                    <div class="TransparentBarGraphIframeCenter">
+                        <iframe class="TransparentBarGraphIframeProportions" scrolling="no" src="~/Posts/GraphDataCard"></iframe>
+                    </div>
+                    <a href="http://www.pewresearch.org/fact-tank/2017/01/10/u-s-public-says-russia-hacked-campaign/" class="cd-read-more">Read more</a>
+                    <span class="cd-date">January 2017</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->*@
 
         <div class="cd-timeline-block">
             <div class="fullScreenIframeDiv">
-                <iframe class="fullScreenIframe" scrolling="no" src="~/Posts/GraphDataCard"></iframe>
+                <iframe class="fullScreenIframe" scrolling="no" src="~/Blog/Graphs/GraphDataCard"></iframe>
             </div>
             <div class="whiteBackground">
-            <p>alsdkfjas;ldkfjas;lfdkj</p>
-                <p>alsdkfjas;ldkfjas;lfdkj</p>
+
             </div>
         </div>
 
@@ -87,7 +86,7 @@
             <div class="cd-timeline-content Graph1Section">
                 <h2>BuzzFeed releases unsubstantiated claims about Trumps Russian ties</h2>
                 <p>BuzzFeed publishes a dossier chock full of sordid but unsubstantiated claims regarding Donald Trumps relationship to Russia. </p>
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "If we were to take this report at face value, half the people cited should be in prison. But we can't verify any of it, and so it might just be a story." }, { "Author", "Aki Peritz" } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "If we were to take this report at face value, half the people cited should be in prison. But we can't verify any of it, and so it might just be a story." }, { "Author", "Aki Peritz" } });
                 <a href="http://www.vox.com/conversations/2017/1/13/14240616/donald-trump-russia-putin-buzzfeed-intelligence-community" class="cd-read-more">Read more</a>
                 <span class="cd-date">January 2017</span>
             </div> <!-- cd-timeline-content -->
@@ -302,7 +301,7 @@
             <div class="cd-timeline-content Graph1Section">
                 <h2>Donald Trump writes a book.  In it he praises Putins plans for Russia</h2>
                 <p>Trump praised Putin while expressing frustration about Obamas handling of foreign policy.  </p>
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "I respect Putin and the Russians" }, { "Author", "Author" } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "I respect Putin and the Russians" }, { "Author", "Author" } });
                 <a href="https://books.google.com/books?id=Tp80hJFYqCMC&pg=PA95&lpg=PA95&dq=%22Putin+has+big+plans+for+Russia.+He+wants+to+edge+out%22&source=bl&ots=4oAikxHOf6&sig=qmOPOPauWboSueBAyye_nROS48g&hl=en&sa=X&ved=0ahUKEwjug4LD-cHPAhWFKWMKHfAuAnkQ6AEIJTAB#v=onepage&q=%22Putin%20has%20big%20plans%20for%20Russia.%20He%20wants%20to%20edge%20out%22&f=false" class="cd-read-more">Read more</a>
                 <span class="cd-date">2011</span>
             </div> <!-- cd-timeline-content -->
@@ -318,7 +317,7 @@
                     According to an account posted on eTurboNews at a real estate conference held in New York Donald Trump Jr. discussed how large his families investments were in Russia.  He mentioned how the Russians make up a disproportionately large section of the Trump assets.
                 </p>
 
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "We see a lot of money pouring in from Russia." }, { "Author", "Donald Trump Jr." } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "We see a lot of money pouring in from Russia." }, { "Author", "Donald Trump Jr." } });
                 <a href="https://www.washingtonpost.com/politics/heres-what-we-know-about-donald-trump-and-his-ties-to-russia/2016/07/29/1268b5ec-54e7-11e6-88eb-7dda4e2f2aec_story.html?utm_term=.54fc7c25afaf" class="cd-read-more">Read more</a>
                 <span class="cd-date">October 2008</span>
             </div> <!-- cd-timeline-content -->
@@ -333,7 +332,7 @@
                 <p>
                     Speaking at a deposition, Trump talks about his future in Russia.  He said the meeting took place at Trump tower.
                 </p>
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "We will be in Moscow at some point." }, { "Author", "Donald Trump" } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "We will be in Moscow at some point." }, { "Author", "Donald Trump" } });
                 <a href="https://www.nytimes.com/2017/01/16/us/politics/donald-trump-russia-business.html" class="cd-read-more">Read more</a>
                 <span class="cd-date">Mid 2000s</span>
             </div> <!-- cd-timeline-content -->
@@ -362,7 +361,7 @@
                 <p>
                     Donald Trumps personal assistant is quoted in the Moscow Times saying that construction in Russia isn't at the top of the project list.
                 </p>
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "“That’s way on the back, back, back burner. We haven’t thought about Moscow for some time.”" }, { "Author", "Trumps Personal Assistant" } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "“That’s way on the back, back, back burner. We haven’t thought about Moscow for some time.”" }, { "Author", "Trumps Personal Assistant" } });
                 <a href="https://www.nytimes.com/2017/01/16/us/politics/donald-trump-russia-business.html" class="cd-read-more">Read more</a>
                 <span class="cd-date">February 1998</span>
             </div> <!-- cd-timeline-content -->
@@ -392,7 +391,7 @@
                 <p>
                     Donald trump discusses the shutting down of the hotel project he had planned for Moscow.  He claimed it was too hard to own and have control over property in the Soviet Union.
                 </p>
-                @Html.Partial("QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "in the Soviet Union, you don't own anything. It's hard to conjure up spending hundreds of millions of dollars on something and not own it." }, { "Author", "Donald Trump Jr." } });
+                @Html.Partial("_QuoteBox", new ViewDataDictionary(ViewData) { { "Quote", "in the Soviet Union, you don't own anything. It's hard to conjure up spending hundreds of millions of dollars on something and not own it." }, { "Author", "Donald Trump Jr." } });
                 <a href="https://www.nytimes.com/2017/01/16/us/politics/donald-trump-russia-business.html" class="cd-read-more">Read more</a>
                 <span class="cd-date">December 1988</span>
             </div> <!-- cd-timeline-content -->
@@ -413,20 +412,8 @@
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
-
-
-
     </section> <!-- cd-timeline -->
 
-    <div id="footer" class="shareFooter">
-        <a class="fb btn btn-danger" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-
-        <br />
-        <a class="tw btn btn-info" href="https://twitter.com/intent/tweet/?url=hey" target="_blank">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-    </div>
+    @Html.Partial("_ShareFooter");
 </body>
 

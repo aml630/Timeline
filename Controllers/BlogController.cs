@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TimeLineBlog.Controllers
 {
-    public class PostsController : Controller
+    public class BlogController : Controller
     {
         // GET: Post
         public ActionResult Timeline()
@@ -23,7 +23,7 @@ namespace TimeLineBlog.Controllers
         public ActionResult GraphDataCard()
         {
 
-            return View();
+            return View("~/Views/Blog/Graphs/GraphDataCard.aspx");
         }
 
         public ActionResult TransparentBarGraph()

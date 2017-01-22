@@ -183,7 +183,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -194,6 +194,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\p03vhv9x.jpg" />
     <Content Include="Content\NewCSS\ShareBar.css" />
     <Content Include="favicon.ico" />
     <Content Include="Content\bootstrap.css" />
@@ -299,16 +300,17 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <None Include="Content\NewCSS\RecentPost.scss" />
     <Content Include="Views\Shared\_GraphPartial.cshtml" />
-    <Content Include="Views\Posts\Timeline.cshtml" />
+    <Content Include="Views\Blog\Timeline.cshtml" />
     <Content Include="Views\Graphs\OrangeGraph.cshtml" />
-    <Content Include="Views\Posts\GraphDataCard.cshtml" />
-    <Content Include="Views\Posts\ColorfulDataPoints.cshtml" />
-    <Content Include="Views\Posts\TransparentBarGraph.cshtml" />
-    <Content Include="Views\Posts\QuoteBox.cshtml" />
-    <Content Include="Views\Shared\ShareBar.cshtml" />
+    <Content Include="Views\Blog\Graphs\GraphDataCard.cshtml" />
+    <Content Include="Views\Blog\Graphs\ColorfulDataPoints.cshtml" />
+    <Content Include="Views\Blog\Graphs\TransparentBarGraph.cshtml" />
+    <Content Include="Views\Shared\_QuoteBox.cshtml" />
+    <Content Include="Views\Shared\_ShareBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\FooterShare.cshtml" />
+    <Content Include="Views\Shared\_ShareFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

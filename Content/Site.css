@@ -30,6 +30,10 @@ textarea {
     flex-flow: row wrap;
 }
 
+.pull-right {
+    margin-right: 50px;
+}
+
 .animate {
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
