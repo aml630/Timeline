@@ -2,59 +2,21 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="ShareBar">
-    <a class="fb btn btn-danger" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
+<link href="~/Content/NewCSS/ShareBar.css" rel="stylesheet" />
 
-    <br />
-    <a class="tw btn btn-info" href="https://twitter.com/intent/tweet/?url=hey" target="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
+
+<div class="shareBarParent">
+    <div class="ShareBar">
+        <a class="fb btn btn-danger" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+
+        <br />
+        <a class="tw btn btn-info" href="https://twitter.com/intent/tweet/?url=hey" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+    </div>
 </div>
-
-<style>
-    .fb {
-        width: 20px;
-        height: 30%;
-    }
-
-    .tw {
-        margin-top: 10px;
-        width: 20px;
-        height: 30%;
-    }
-
-    .ShareBar {
-        position: fixed;
-        top: 150px;
-        left: 20px;
-        height: 100%;
-    }
-
-    .ShareBar .tw i{
-        margin-top: 50%;
-        font-size: 20px;
-        margin-left: -10px;
-      
-    }
-    .ShareBar .fb i{
-        font-size: 20px;
-        margin-left: -5px;
-    }
-
-    .btn-danger {
-    color: #ffffff;
-    background-color: #3b5998!important;
-    border-color:  #3b5998 !important;
-}
-
-        .btn-danger:hover {
-    color: #ffffff;
-    background-color: #355088!important;
-    border-color:  #355088 !important;
-}
-</style>
 
 <script>
     $(document).ready(function () {
