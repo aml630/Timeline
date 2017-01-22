@@ -300,8 +300,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <None Include="Content\NewCSS\RecentPost.scss" />
     <Content Include="Views\Shared\_GraphPartial.cshtml" />
-    <Content Include="Views\Blog\Timeline.cshtml" />
-    <Content Include="Views\Graphs\OrangeGraph.cshtml" />
+    <Content Include="Views\Blog\trump-russia.cshtml" />
     <Content Include="Views\Blog\Graphs\GraphDataCard.cshtml" />
     <Content Include="Views\Blog\Graphs\ColorfulDataPoints.cshtml" />
     <Content Include="Views\Blog\Graphs\TransparentBarGraph.cshtml" />

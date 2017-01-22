@@ -9,9 +9,9 @@ namespace TimeLineBlog.Controllers
     public class BlogController : Controller
     {
         // GET: Post
-        public ActionResult Timeline()
+        public ActionResult TrumpRussia()
         {
-            return View();
+            return View("~/Views/Blog/trump-russia.cshtml");
         }
 
         public ActionResult OrangeGraph()
@@ -23,7 +23,7 @@ namespace TimeLineBlog.Controllers
         public ActionResult GraphDataCard()
         {
 
-            return View("~/Views/Blog/Graphs/GraphDataCard.aspx");
+            return View("~/Views/Blog/Graphs/GraphDataCard.cshtml");
         }
 
         public ActionResult TransparentBarGraph()
